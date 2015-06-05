@@ -14,13 +14,12 @@ Soon @ bower
 ## Usage
 create a class for your effect and just include a mixin for it.
 
-  .my-effect {
-    @include hover-icon-1(45px, fff, fff, 000);
+    .my-effect {
+      @include hover-icon-1(45px, fff, fff, 000);
+      @include hover-icon-1--active(45px, fff, fff, 000);
+    }
 
-    @include hover-icon-1--active(45px, fff, fff, 000);
-  }
-
-hover-icon-<number of effect>(innerIconSize, iconColor, secondaryColor, iconHoverColor)
+    hover-icon-<number of effect>(innerIconSize, iconColor, secondaryColor, iconHoverColor)
 
 ## Attention WIP!
 This library is actually work in progress. So take care if you want to use it yet.
