@@ -1,4 +1,4 @@
-@mixin hover-icon-7($size, $icon-color, $bg-color, $icon-hover-color) {
+@mixin hover-icon-8($size, $icon-color, $bg-color, $icon-hover-color) {
   @include effectIcon($size, $icon-color);
 
   width: $size * 2 + ($size / 45 * 2);
@@ -21,11 +21,31 @@
   &:hover {
     box-shadow: 0 0 0 0 rgba($bg-color, 0);
     color: $icon-hover-color;
+
+    &:after {
+      animation: spinAround 9s linear infinite;
+    }
   }
 }
 
-@mixin hover-icon-7--active($size, $icon-color, $bg-color, $icon-hover-color) {
+@mixin hover-icon-8--active($size, $icon-color, $bg-color, $icon-hover-color) {
   @include effectIcon($size, $icon-hover-color);
 
-  border: ($size / 45 * 4) dashed $bg-color;
+  &:after {
+    top: - ($size / 45 * 4);
+    left: - ($size / 45 * 4);
+    padding: 0;
+    z-index: 10;
+    border: ($size / 45 * 4) dashed $bg-color;
+    animation: spinAround 9s linear infinite;
+  }
+}
+
+@-webkit-keyframes spinAround {
+  from {
+    -webkit-transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }

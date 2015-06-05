@@ -56,6 +56,15 @@ $test-icon-size: 3rem;
   }
 }
 
+.effect-8 {
+  @include hover-icon-8($test-icon-size, $white, $white, $ib-orange);
+
+  @include m('active') {
+    @include hover-icon-8--active($test-icon-size, $white, $white, $ib-orange);
+  }
+}
+
+
 .effect-9 {
   @include hover-icon-9($test-icon-size, $white, $white, $ib-orange);
 
