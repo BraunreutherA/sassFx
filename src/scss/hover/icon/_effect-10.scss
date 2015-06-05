@@ -1,4 +1,4 @@
-@mixin hover-icon-9($size, $icon-color, $bg-color, $icon-hover-color) {
+@mixin hover-icon-10($size, $icon-color, $bg-color, $icon-hover-color) {
   @include effectIcon($size, $icon-color);
 
   box-shadow: 0 0 0 ($size / 45 * 4) $bg-color;
@@ -11,27 +11,28 @@
     box-shadow: 0 0 0 ($size / 45 * 8) rgba($bg-color, 0.3);
 
     &:before {
-      animation: toRightFromLeft 0.3s forwards;
+      animation: toLeftFromRight 0.3s forwards;
     }
   }
 }
-@keyframes toRightFromLeft {
+@keyframes toLeftFromRight {
   49% {
-    transform: translate(100%);
+    transform: translate(-100%);
   }
   50% {
     opacity: 0;
-    transform: translate(-100%);
+    transform: translate(100%);
   }
   51% {
     opacity: 1;
   }
 }
 
-@mixin hover-icon-9--active($size, $icon-color, $bg-color, $icon-hover-color) {
+@mixin hover-icon-10--active($size, $icon-color, $bg-color, $icon-hover-color) {
   @include effectIcon($size, $icon-hover-color);
   background: $bg-color;
   color: $icon-hover-color;
   box-shadow: 0 0 0 ($size / 45 * 8) rgba($bg-color, 0.3);
 }
+
 

@@ -26,3 +26,8 @@ To make it correctly working you need autoprefixer running over your css file!
 ## Attention WIP!
 This library is actually work in progress. So take care if you want to use it yet.
 If you have suggestions based on the building of the mixins your invited to contribute.
+
+## TODO
+- add effect 11 - 14
+- fix bug for effect 9 & 10 (sitting higher)
+- create showcase
