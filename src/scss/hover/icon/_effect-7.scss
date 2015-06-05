@@ -1,0 +1,37 @@
+@mixin hover-icon-7($size, $icon-color, $bg-color, $icon-hover-color) {
+  @include effectIcon($size, $icon-color);
+
+  width: $size * 2 + ($size / 45 * 2);
+  height: $size * 2 + ($size / 45 * 2);
+  box-shadow: 0 0 0 ($size / 45 * 4) $bg-color;
+  transition: box-shadow 0.2s;
+
+  &:before {
+    line-height: $size * 2 + ($size / 45 * 2);
+  }
+
+  &:after {
+    top: - ($size / 45 * 4);
+    left: - ($size / 45 * 4);
+    padding: 0;
+    z-index: 10;
+    border: ($size / 45 * 4) dashed $bg-color;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 0 rgba($bg-color, 0);
+    color: $icon-hover-color;
+
+    &:after {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin hover-icon-7--active($size, $icon-color, $bg-color, $icon-hover-color) {
+  @include effectIcon($size, $icon-hover-color);
+
+  box-shadow: 0 0 0 ($size / 45 * 4) $bg-color;
+  background-color: $bg-color;
+}

@@ -1,0 +1,65 @@
+$test-icon-size: 3rem;
+
+.effect-1 {
+  @include hover-icon-1($test-icon-size, $white, $white, $ib-orange);
+
+  @include m('active') {
+    @include hover-icon-1--active($test-icon-size, $white, $white, $ib-orange);
+  }
+}
+
+.effect-2 {
+  @include hover-icon-2($test-icon-size, $white, $white, $ib-orange);
+
+  @include m('active') {
+    @include hover-icon-2--active($test-icon-size, $white, $white, $ib-orange);
+  }
+}
+
+.effect-3 {
+  @include hover-icon-3($test-icon-size, $ib-orange, $white, $ib-orange);
+
+  @include m('active') {
+    @include hover-icon-3--active($test-icon-size, $ib-orange, $white, $ib-orange);
+  }
+}
+
+.effect-4 {
+  @include hover-icon-4($test-icon-size, $ib-orange, $white, $white);
+
+  @include m('active') {
+    @include hover-icon-4--active($test-icon-size, $ib-orange, $white, $white);
+  }
+}
+
+.effect-5 {
+  @include hover-icon-5($test-icon-size, $ib-orange, $white, $white);
+
+  @include m('active') {
+    @include hover-icon-5--active($test-icon-size, $ib-orange, $white, $white);
+  }
+}
+
+.effect-6 {
+  @include hover-icon-6($test-icon-size, $white, $white, $ib-orange);
+
+  @include m('active') {
+    @include hover-icon-6--active($test-icon-size, $white, $white, $ib-orange);
+  }
+}
+
+.effect-7 {
+  @include hover-icon-7($test-icon-size, $white, $white, $ib-orange);
+
+  @include m('active') {
+    @include hover-icon-7--active($test-icon-size, $white, $white, $ib-orange);
+  }
+}
+
+.effect-9 {
+  @include hover-icon-9($test-icon-size, $white, $white, $ib-orange);
+
+  @include m('active') {
+    @include hover-icon-9--active($test-icon-size, $white, $white, $ib-orange);
+  }
+}

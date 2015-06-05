@@ -1,0 +1,58 @@
+{
+  "name": "ibalopo.website",
+  "version": "0.2.0",
+  "description": "Website of Ibalopo",
+  "author": "Alexander Braunreuther <a.braunreuther@ibalopo.de>",
+  "contributors": [
+    {
+      "name": "Alexander Braunreuther",
+      "email": "a.braunreuther@ibalopo.de"
+    }
+  ],
+  "scripts": {},
+  "main": "lib/foo.js",
+  "repository": {
+    "type": "git",
+    "url": "hhttps://bitbucket.org/ibalopo/ibalopo.website"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/ibalopo/ibalopo.website/issues"
+  },
+  "keywords": [
+    "ibalopo"
+  ],
+  "analyze": true,
+  "license": "proprietary",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.7.1",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.3.0",
+    "gulp-csso": "^1.0.0",
+    "gulp-htmlmin": "^1.1.1",
+    "gulp-if": "^1.2.5",
+    "gulp-inject": "^1.2.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-order": "^1.1.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.1",
+    "gulp-scss-lint": "^0.2.0",
+    "gulp-size": "^1.2.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-task-listing": "^1.0.0",
+    "gulp-to-json": "^1.0.1",
+    "gulp-uncss": "^1.0.1",
+    "gulp-util": "^3.0.4",
+    "lodash": "^3.8.0",
+    "moment": "^2.10.2",
+    "node-notifier": "^4.2.1",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.0",
+    "wiredep": "^2.2.2",
+    "yargs": "^3.9.0"
+  }
+}

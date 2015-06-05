@@ -1,0 +1,45 @@
+/**
+ * ===============================================================================
+ * 3rd party and utility modules
+ * ===============================================================================
+ */
+
+/**
+ * first of all normailze the browser. This is a sass port of normaize.css
+ */
+@import "../../bower_components/normalize-libsass/normalize";
+
+/**
+ * Utility mixins and functions.
+ * Scut is a sass utility belt: https://davidtheclark.github.io/scut/
+ * Sassdash is like lodash just for sass: https://github.com/davidkpiano/sassdash
+ */
+@import "base/bem";
+
+/**
+ * Variables
+ */
+@import "base/color";
+
+/**
+ * Animate.css as sass version
+ */
+@import "../../bower_components/geoffgraham.animate.scss/animate";
+
+
+
+/**
+ * In the font file all the custom fonts are handled.
+ */
+@import "../../bower_components/font-awesome/scss/font-awesome";
+
+/**
+ * sassFx
+ */
+@import "sassfx";
+
+/**
+ * Tests
+ */
+@import "test/base";
+@import "test/hover/icon/hover-icons";
