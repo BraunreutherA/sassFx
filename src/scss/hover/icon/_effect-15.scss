@@ -1,0 +1,36 @@
+@mixin hover-icon-15($size, $icon-color, $bg-color, $icon-hover-color) {
+  @include effectIcon($size, $icon-color);
+
+  transition: box-shadow 0.2s;
+
+  &:after {
+    top: 0;
+    left: 0;
+    padding: 0;
+    box-shadow: 0 0 0 ($size / 15) $bg-color;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 ($size / 4.5) rgba($bg-color, 1);
+    color: $icon-hover-color;
+
+    &:after {
+      transform: scale(0.85);
+      opacity: 0.5;
+    }
+  }
+}
+
+@mixin hover-icon-15--active($size, $icon-color, $bg-color, $icon-hover-color) {
+  @include effectIcon($size, $icon-hover-color);
+
+  box-shadow: 0 0 0 ($size / 4.5) rgba($bg-color, 1);
+  &:after {
+    top: 0;
+    left: 0;
+    padding: 0;
+    box-shadow: 0 0 0 ($size / 15) rgba($bg-color, .5);
+    transform: scale(.85);
+  }
+}
